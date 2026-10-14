@@ -5,7 +5,7 @@
 
 ## 使用
 
-获取 Windows 目录版 ZIP，完整解压后运行 `WeChatPhotoExport.exe`，无需安装 Python。
+从 [Releases](https://github.com/joyup/WxExportImage/releases) 下载 Windows 目录版 ZIP，完整解压后运行 `WeChatPhotoExport.exe`，无需安装 Python。
 也可按下方步骤自行构建。当前为未签名预览版；支持范围见[兼容性](docs/兼容性.md)。
 
 1. 登录微信，在工具中明确选择账号。

@@ -6,6 +6,7 @@ import os
 import shutil
 import subprocess
 import sys
+import tomllib
 import zipfile
 from pathlib import Path
 
@@ -58,7 +59,8 @@ def main():
             raise SystemExit("Missing license text for "+name)
     for file in ("LICENSE", "THIRD_PARTY_NOTICES.md", "docs/桌面工具使用.md"):
         shutil.copy2(ROOT/file, destination/Path(file).name)
-    (destination/"build-info.json").write_text(json.dumps({"python": sys.version.split()[0],
+    version = tomllib.loads((ROOT/"pyproject.toml").read_text(encoding="utf-8"))["project"]["version"]
+    (destination/"build-info.json").write_text(json.dumps({"version": version, "python": sys.version.split()[0],
         "dependencies": versions, "platform": "windows-x64", "signed": False}, indent=2), encoding="utf-8")
     env = dict(os.environ, QT_QPA_PLATFORM="offscreen")
     result = subprocess.run([str(destination/"WeChatPhotoExport.exe"), "--self-test"], env=env, timeout=120)

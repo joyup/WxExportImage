@@ -9,8 +9,8 @@ ROOT = Path(__file__).resolve().parents[1]
 FILES = ("README.md", "CHANGELOG.md", "LICENSE", "SECURITY.md", "CONTRIBUTING.md", "THIRD_PARTY_NOTICES.md",
          "pyproject.toml", "requirements-desktop.lock", ".gitignore", ".gitattributes", "docs/桌面工具使用.md",
          "docs/开源发布指南.md", "docs/桌面架构.md", "docs/兼容性.md", "tools/build_windows.py",
-         "tools/prepare_public_source.py", "tests/test_desktop.py", "tests/test_gui.py",
-         "tests/test_formats.py", "tests/test_public_source.py")
+         "tools/prepare_public_source.py", "tools/publish_release.py", "tests/test_desktop.py", "tests/test_gui.py",
+         "tests/test_formats.py", "tests/test_public_source.py", "tests/test_release.py")
 TREES = ("src/wechat_photo_export", "packaging", ".github", "licenses", ".agents/skills/wechat-photo-export")
 ALLOWED_SUFFIXES = {".py", ".md", ".spec", ".yml", ".yaml"}
 
