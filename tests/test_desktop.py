@@ -237,7 +237,8 @@ class DesktopTests(unittest.TestCase):
         for label in ("first", "second"):
             (root/label/"msg"/"attach").mkdir(parents=True)
         accounts = discover_accounts([root], defaults=False)
-        self.assertEqual(sum(a.root.parent == root for a in accounts), 2)
+        self.assertEqual({account.root for account in accounts},
+                         {(root/label).resolve() for label in ("first", "second")})
 
     def test_diagnostics_error_codes_never_include_exception_text(self):
         self.assertEqual(error_code(RuntimeError("secret and personal path")), "unexpected")
