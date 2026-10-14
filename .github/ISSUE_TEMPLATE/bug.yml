@@ -1,0 +1,23 @@
+name: 故障反馈
+description: 提供版本、错误码和人工可复现步骤。
+body:
+  - type: markdown
+    attributes:
+      value: 不要上传密钥、联系人表、聊天截图、原始数据库或个人照片。可附应用主动导出的脱敏诊断。
+  - type: input
+    id: version
+    attributes:
+      label: 工具版本 / Windows 版本 / 微信版本
+    validations:
+      required: true
+  - type: input
+    id: code
+    attributes:
+      label: 错误码
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: 复现步骤与预期结果
+      description: 使用虚构群名和账号，不填写真实路径或个人内容。
+    validations:
+      required: true

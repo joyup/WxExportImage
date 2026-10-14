@@ -1,0 +1,30 @@
+# ---------- 本机数据（敏感） ----------
+# 密钥、名称表、研究数据和运行状态统一排除
+/data/
+*.dpapi
+*.sqlite3
+*.sqlite3-wal
+*.sqlite3-shm
+
+# ---------- 导出与构建产物 ----------
+output/
+build/
+dist/
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.venv/
+venv/
+
+# ---------- 编辑器与系统 ----------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+
+# ---------- 日志 ----------
+*.log
