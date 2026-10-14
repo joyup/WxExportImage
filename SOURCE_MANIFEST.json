@@ -199,7 +199,7 @@
   "src/wechat_photo_export/services/jobs.py": "e140470d5b8fae966b239ab9a3320940fc6a3a747c56bf3ac166dfee7e851858",
   "src/wechat_photo_export/services/preview.py": "483ca35d27bc6f18f8cca2233e37173fc872e05f328c815fbedd15c979ee6140",
   "src/wechat_photo_export/services/state.py": "1d8391b20c255ffb913e2cde724effcf2ad20964eef5980e989dc94f66efa8c7",
-  "tests/test_desktop.py": "37781af1fe520ca874b21527508ef440f20defc581cf9df06af6868287cf4f3d",
+  "tests/test_desktop.py": "63ef7f7a9b93f295173e7bcfd74b699cea6de9917b86a3e1803e2413dc29183b",
   "tests/test_formats.py": "d7949af08042697f2439e543dbb3cc9c25752be906be239b0b768297272b26a8",
   "tests/test_gui.py": "b786d41e096a939a1429cf2646c1942d47dc748c74803863e629f1b52bdb0f39",
   "tests/test_public_source.py": "236d96e415a98ac6953d7f967543475b0efdb218f33c4f0fa59f3641646bf9ca",
